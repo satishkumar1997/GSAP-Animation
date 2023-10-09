@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Animation Example</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      header,
+      footer {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      header h1 {
+        font-size: 20px;
+      }
+
+      .animation {
+        height: 100vh;
+        background-image: url('img/mount (1).png');
+        background-repeat: no-repeat;
+        background-size:cover;
+        position:relative;
+        overflow: hidden;
+      }
+      .car {
+        height: 100px;
+        position: absolute;
+        top: 50%;
+      }
+      .mount {
+        height: 500px;
+        left:10%;
+        position: absolute;
+      }
+      .sun {
+        height: 100px;
+        position: absolute;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>This is animation in JavaScript using Gsap Library</h1>
+    <section class="animation">
+      <img src="img/car.png" class="car" alt="car is moving" />
+      <p>this is animation using gsap so this is i create some</p>
+      <!-- <img src="img/mount (1).png" class="mount" /> -->
+      <img src="img/sun.png" class="sun" />
+    </section>
+    <footer>
+      <h1>This is footer</h1>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.1/TweenLite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.1/TimelineLite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.1/plugins/CSSPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.1/plugins/BezierPlugin.min.js"></script>
+    <script src="app.js"></script>
+
+    <!-- <script src="app.js"></script> -->
+
+    <script>
+      // const sunPath = {
+      //   curviness: 1.25,
+      //   autoRotate: true,
+      //   values: [{ x: 100, y: -20, x: 200, y: -10, x: 300, x: 600, y: -40 }],
+      // };
+
+      // const tween = new TimelineLite();
+      // tween.add(
+      //   TweenLite.to("", 1, {
+      //     bezier:
+      //     ease: Power1.easeInOut,
+      //   })
+      // );
+    //   const sunPath = {
+    //     curviness: 2.25,
+    //     autoRotate: true,
+    //     values: [{ x: 100, y: -20 }],
+    //   };
+
+    //   const tween1 = new TimelineLite();
+    //   tween.add(
+    //     TweenLite.to(".sun", 2, {
+    //       bezier: sunPath,
+    //       ease: Power1.easeInOut,
+    //     })
+    //   );
+    </script>
+  </body>
+</html>
